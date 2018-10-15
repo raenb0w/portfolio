@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="porfolio.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+<!-- Layout inspired by James Kamana. 
+https://codepen.io/JayKamana/full/ZeJGxq/
+-->
+
+<!-- Stitched look modified from Chris Coyier at css-tricks.com.
+https://css-tricks.com/snippets/css/stitched-look/
+-->
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Bad+Script|Handlee|Raleway" rel="stylesheet">
+
+<!-- Nav Bar -->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color: #DAC3E7" id="navbar">
+    <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#nav-bar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+    <div class="collapse navbar-collapse" id="nav-bar">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-text">
+          <a target="_blank" href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-text">
+          <a target="_blank" href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-text">
+          <a target="_blank" href="#portfolio" class="nav-link">Portfolio</a>
+        </li>
+        <li class="nav-text">
+          <a target="_blank" href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+ <!-- Home -->
+  <section id="home">
+ <header class="text-center">
+   <div class="container">
+   <div class="wide">
+     <h1 class="text-center display-2" id="home-name-box">Rachel Falconer</h1>
+     </div>
+   </div>
+  </header>
+  </section>
+
+<!-- About -->
+  <div id="welcome-section" class="py-4 border-lines-about">
+    <div class="container">
+      <h1 id="about-text" class="text-center display-4">About</h1>
+      <div class="narrow">
+      <div class="container" id="about-box">
+      <p>Hi! My name is Rachel, but I prefer to be called Rae. :) I'm an newbie web developer hoping to get my certificate in Front End Development soon, and eventually evolving into a Full Stack Dev!</p>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- Portfolio -->
+  <section id="projects" class="py-3 border-lines-rest">
+    <div class="container">
+      <h2 id="portfolio-text" class="text-center display-4">Portfolio</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div id="portfolio-card" class="project-tile card-inverse">
+            <img class="card-img-top img-responsive" id="image" src="http://res.cloudinary.com/raenbow/image/upload/v1527190613/eartha-kitt-tribute.png" alt="Tribute Page Image">
+            <div class="card-body">
+              <h4 id="portfolio-text-card" class="card-title">Tribute Page to Eartha Kitt</h4>
+              <a id="card-sub" href="https://codepen.io/raenbow/full/vjwOav/" class="btn btn-outline-secondary text-white" target="_blank">Click to View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div id="portfolio-card" class="project-tile card-inverse">
+            <img class="card-img-top img-responsive" src="http://res.cloudinary.com/raenbow/image/upload/v1527298292/random-quote-gen.png" alt="Random Quote Generator">
+            <div class="card-body">
+              <h4 id="portfolio-text-card" class="card-title">Random Quote Generator</h4>
+              <a id="card-sub" href="https://codepen.io/raenbow/full/OZeYeq/" class="btn btn-outline-secondary text-white" target="_blank">Click to View</a>
+            </div>
+          </div>
+        </div>
+      <div class="col-md-4">
+          <div id="portfolio-card" class="project-tile card-inverse">
+            <img class="card-img-top img-responsive" src="http://res.cloudinary.com/raenbow/image/upload/v1527804807/local-weather-app.png" alt="Local Weather App">
+            <div class="card-body">
+              <h4 id="portfolio-text-card" class="card-title">Local Weather App</h4>
+              <a id="card-sub" href="https://codepen.io/raenbow/full/dKbbQR/" class="btn btn-outline-secondary text-white" target="_blank">Click to View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    
+<!-- Contact -->
+    <section id="contact" class="py-4 border-lines-rest">
+      <div class="container">
+        <h2 id="contact-text" class="text-center display-4">Contact</h2>
+        <div class="row">
+          <div class="col-md-7 mx-auto">
+            <div id="about-box">
+            <form>
+
+ <!-- Name -->
+              <div class="form-group">
+                <div class="input-group input-group-sm">
+                  <span class="input-group-addon">
+                    <i class="fa fa-address-book-o side"></i>
+                  </span>
+                  <input type="text" placeholder="Name*" class="form-control">
+                </div>
+              </div>
+ <!-- Email -->
+              <div class="form-group">
+                <div class="input-group input-group-sm">
+                  <span class="input-group-addon">
+                    <i class="fa fa-envelope-o side"></i>
+                  </span>
+                  <input type="text" placeholder="E-Mail*" class="form-control">
+                </div>
+              </div>
+              
+<!-- Message/Comments -->
+              <div class="form-group">
+                <div class="input-group input-group-sm">
+                  <span class="input-group-addon">
+                    <i class="fa fa-commenting-o side"></i>
+                  </span>
+                  <textarea class="form-control message-padding" placeholder="Message/Comment*" rows="4"></textarea>
+                </div>
+              </div>
+              <p id="required"> *Required</p>
+              <input type="submit" value="Submit" class="btn btn-primary btn-block btn-md" id="submit">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+        </section>
+<!-- Footer -->
+      <footer class="text-center py-3">
+        <h3 class="text-center">Social Media</h> <i class="fa fa-heart-o"></i>
+        <div class="d-flex flex-row justify-content-center">
+          <div class="p-3">
+            <a href="https://github.com/raenb0w" target="_blank"><i class="fa fa-github"></i></a>
+          </div>
+          <div class="p-3">
+            <a href="https://www.linkedin.com/in/rachel-falconer-25314a9a/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </div>
+          <div class="p-3">
+            <a href="https://www.facebook.com/rachel.falconer.73" target="_blank"><i class="fa fa-facebook"></i></a>
+          </div>
+          <div class="p-3">
+            <a href="https://www.freecodecamp.org/portfolio/raenb0w" target="_blank" id="profile-link"><i class="fa fa-free-code-camp"></i></a>
+          </div>
+        </div>
+        <p id="copyright">&copy Rachel Falconer</p>
+      </footer>
+    </body>
+   </html>
